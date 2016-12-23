@@ -18,9 +18,9 @@ real_t get_fibonacci( uintmax_t const n ) {
 		return 0.0_R;
 	}
 	static auto const sqrt_five = sqrt( 5.0_R );
-	static auto const b_part = (1.0_R + sqrt_five) / 2.0_R;
-	static auto const c_part = (1.0_R - sqrt_five) / 2.0_R;
-
+	static auto const b_part = 0.5_R + 0.5_R * sqrt_five;
+	static auto const c_part = 0.5_R - 0.5_R * sqrt_five;
+	
 	auto const b = pow( b_part, n );
 	auto const c = pow( c_part, n );
 	return round( (b - c)/sqrt_five );
