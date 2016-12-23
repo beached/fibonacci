@@ -6,7 +6,7 @@
 #include <string>
 #include <boost/multiprecision/cpp_dec_float.hpp>
 
-using real_t = boost::multiprecision::number<boost::multiprecision::cpp_dec_float<1000>>;
+using real_t = boost::multiprecision::number<boost::multiprecision::cpp_dec_float<10240>>;
 
 real_t operator"" _R( long double d ) noexcept {
 	return real_t{ d };
