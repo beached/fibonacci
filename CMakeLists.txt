@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 2.8.12 )
 
-project( oref0_cpp_prj )
+project( fibonacci_prj )
 
 include( ExternalProject )
 
