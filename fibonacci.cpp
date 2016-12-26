@@ -27,8 +27,10 @@ real_t get_fibonacci( uintmax_t const n ) {
 }
 
 int main( int argc, char **argv ) { 
-	assert( argc == 2 );
-	auto n = strtoull( argv[1], 0, 10 );
+//	assert( argc == 2 );
+//
+//	auto n = strtoull( argv[1], 0, 10 );
+	uint64_t n = 1234567;
 	std::cout << n << ": " << std::setprecision(std::numeric_limits<real_t>::max_digits10) << get_fibonacci( n ) << '\n';
 	return EXIT_SUCCESS;
 }

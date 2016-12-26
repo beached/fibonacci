@@ -4,7 +4,7 @@ project( fibonacci_prj )
 
 include( ExternalProject )
 
-find_package( Boost 1.61.0 COMPONENTS system date_time iostreams program_options filesystem regex unit_test_framework REQUIRED )
+find_package( Boost 1.60.0 COMPONENTS system date_time iostreams program_options filesystem regex unit_test_framework REQUIRED )
 
 enable_testing( )
 add_definitions( -DBOOST_TEST_DYN_LINK ) 
